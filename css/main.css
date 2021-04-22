@@ -107,7 +107,7 @@ img {
   font-style: normal;
 }
 
-.header-yellow__container {
+.header-yellow__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,8 +116,16 @@ img {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+  .header-yellow__list {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
 @media screen and (min-width: 1440px) {
-  .header-yellow__container {
+  .header-yellow__list {
     position: relative;
     -webkit-box-pack: end;
         -ms-flex-pack: end;
@@ -147,8 +155,8 @@ img {
 
 @media screen and (min-width: 1440px) {
   .header-yellow {
-    padding-top: 42px;
-    padding-bottom: 30px;
+    padding-top: 59px;
+    padding-bottom: 47px;
   }
 }
 
@@ -177,23 +185,43 @@ img {
   }
 }
 
-.logo__box {
+.header-yellow__item--user {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-yellow__item--user {
+    display: block;
+  }
+}
+
+.header-yellow__item--menu {
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-yellow__item--menu {
+    display: none;
+  }
+}
+
+.header-yellow__item--logo {
   display: none;
 }
 
 @media screen and (min-width: 768px) {
-  .logo__box {
+  .header-yellow__item--logo {
     display: block;
   }
 }
 
 @media screen and (min-width: 1440px) {
-  .logo__box {
+  .header-yellow__item--logo {
     position: absolute;
-    left: 137px;
-    top: -50%;
-    -webkit-transform: translateY(50%);
-            transform: translateY(50%);
+    left: 0px;
+    top: 50%;
+    -webkit-transform: translatey(-50%);
+            transform: translatey(-50%);
   }
 }
 
@@ -224,6 +252,16 @@ img {
 @media screen and (min-width: 1440px) {
   .logo__text {
     text-align: left;
+  }
+}
+
+.header-yellow--tel {
+  display: none;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-yellow--tel {
+    display: block;
   }
 }
 
@@ -265,6 +303,16 @@ img {
     font-weight: 500;
     font-size: 18px;
     line-height: 1.17;
+  }
+}
+
+.header-white--tel {
+  display: block;
+}
+
+@media screen and (min-width: 1440px) {
+  .header-white--tel {
+    display: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
