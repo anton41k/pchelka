@@ -1,6 +1,11 @@
 .header-yellow__container {
     display: flex;
     justify-content: space-between;
+
+    @media screen and (min-width: 1440px) {
+        position: relative;
+        justify-content: flex-end;
+    }
 }
 
 .header-yellow {
@@ -18,8 +23,8 @@
     }
 
     @media screen and (min-width: 1440px) {
-        padding-top: 42px;
-        padding-bottom: 30px;
+        padding-top: 59px;
+        padding-bottom: 47px;
     }
 }
 
@@ -46,6 +51,13 @@
 
     @media screen and (min-width: 768px) {
         display: block;
+    }
+
+    @media screen and (min-width: 1440px) {
+        position: absolute;
+        left: 137px;
+        top: -50%;
+        transform: translateY(50%);
     }
 }
 

@@ -116,6 +116,15 @@ img {
           justify-content: space-between;
 }
 
+@media screen and (min-width: 1440px) {
+  .header-yellow__container {
+    position: relative;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+}
+
 .header-yellow {
   background: var(--gradient-yellow);
   -webkit-box-shadow: var(--box-shadow-yellow);
@@ -175,6 +184,16 @@ img {
 @media screen and (min-width: 768px) {
   .logo__box {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .logo__box {
+    position: absolute;
+    left: 137px;
+    top: -50%;
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
   }
 }
 
